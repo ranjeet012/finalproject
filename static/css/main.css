@@ -1,0 +1,29 @@
+body{
+background-color:#ead3cb;
+}
+
+.formdata{
+    margin-top: 250px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+input{
+    font-size:30px;
+}
+
+.search-btn{
+    font-size:30px;
+}
+
+.admin-btn{
+    font-size:30px;
+    margin:5px 10px 0px 1000px;
+}
+
+.container{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right:40px;
+}

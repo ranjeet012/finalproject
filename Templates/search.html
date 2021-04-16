@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cityinfo</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+</head>
+<body style="background-color:white">
+<div class="container">
+    {% if cityinfo|length < 1 %}
+    <h1>search result:</h1>
+    Your search query : <b>{{query}}</b> did not match any documents. <br>
+    Suggestions:
+    <ul>
+        <li style="font-size=30px;">Try for different city</li>
+    </ul>
+    {% endif %}
+</div>
+
+
+<div class="container" >
+{% for content in cityinfo %}
+<h1 >{{content.title}}</h1>
+<p>{{content.content|safe}}</p>
+{% endfor %}
+</div>
+
+</body>
+</html>

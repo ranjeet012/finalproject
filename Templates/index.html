@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>city info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+<a href="/admin"><button class="admin-btn">Admin Pannel</button></a>
+
+<div class="formdata">
+<form  action="/search" method="get">
+    <label style="color:#151515;text-align:center;font-size:40px;" >Enter Your City To Visit:</label>
+    <input type='text' id='city' name="query" placeholder="Enter City">
+    <button class="search-btn">Search</button>
+</form>
+</div>
+
+
+</body>
+</html>
