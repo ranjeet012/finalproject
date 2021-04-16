@@ -1,4 +1,4 @@
-# finalproject
+# project
 It shows the famous place in the city for the search city.
 like
 mumbai
